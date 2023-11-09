@@ -1,0 +1,37 @@
+*{
+padding: 0;
+margin: 0;
+}
+
+body{
+    background-color: #aaaaaa;
+}
+
+.main_box{
+    display: grid;
+    background-color: rgb(106, 190, 176);
+    width: 90%;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+
+.main_box .header{
+
+margin: 0 auto;
+display: grid;
+background-color: #ebe849;
+}
+
+.submain_content_box{
+background-color: violet;
+}
+
+.sidebar{
+    background-color: rgb(187, 48, 48);
+
+}
+
+.footer{
+    background-color: rgb(37, 158, 53);
+
+}
