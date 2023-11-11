@@ -1,37 +1,93 @@
+:root{
+    --colorheader:rgb(114, 114, 42);
+    --favoritecolor:#212;
+}
+
 *{
 padding: 0;
 margin: 0;
+box-sizing: border-box;
 }
 
 body{
-    background-color: #aaaaaa;
+    background-image: url(../recurses/download\ \(1\).jpg);
+    background-size: cover;
 }
 
-.main_box{
+.container{
+    position:relative;
+    margin: 0 auto;
     display: grid;
-    background-color: rgb(106, 190, 176);
-    width: 90%;
+    grid-gap: 10px;
+    width: 91%;
+    grid-template-rows: 4,auto;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 20px;
+    grid-template-areas: "header header header""navegator_bar navegator_bar navegator_bar""main main sidebar""main main sidebar""footer footer footer";
+
 }
 
-.main_box .header{
-
-margin: 0 auto;
-display: grid;
-background-color: #ebe849;
+.navegator_bar{
+    background-color: var(--favoritecolor);
+    grid-area: navegator_bar;
+    color: antiquewhite;
+    width: 100%;
+    height: 100px;
+    flex-direction: row;
 }
 
-.submain_content_box{
+.navegator_bar .logo{
+    display: flex;
+}
+
+.navegator_bar li{
+text-decoration: none;
+}
+
+
+.header{
+
+    animation-name: header_animated;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    background-color: var(--colorheader);
+    grid-area: header;
+    margin-top: 30px;
+}
+
+.container .header,
+.container .footer,
+.container .main_content,
+.container .sidebar{
+    
+    padding: 30px;
+    border-radius: 1em;
+
+}
+
+
+.main_content{
 background-color: violet;
+grid-area: main;
 }
 
 .sidebar{
     background-color: rgb(187, 48, 48);
-
+grid-area: sidebar;
 }
 
 .footer{
     background-color: rgb(37, 158, 53);
+    grid-area: footer;
 
 }
+
+@keyframes header_animated {
+    from{
+        padding: 10px;
+    }
+
+    to{padding: 50px;}
+
+}
+
