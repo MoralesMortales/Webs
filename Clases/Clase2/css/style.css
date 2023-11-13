@@ -10,8 +10,8 @@ box-sizing: border-box;
 }
 
 body{
-    background-image: url(../recurses/download\ \(1\).jpg);
-    background-size: cover;
+    background: linear-gradient(white, black, pink);
+background-size: contain;
 }
 
 .container{
@@ -26,15 +26,61 @@ body{
 
 }
 
-.navegator_bar{
+/* .navegator_bar{
     background-color: var(--favoritecolor);
+    display: flex;
     grid-area: navegator_bar;
     color: antiquewhite;
-    width: 100%;
-    height: 100px;
     flex-direction: row;
-}
-
+    height: 40px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+} */
+.navegator_bar {
+    background-color: var(--favoritecolor);
+    display: flex;
+    grid-area: navegator_bar;
+    color: antiquewhite;
+    flex-direction: row;
+    height: 40px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  
+  .navegator_bar nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navegator_bar .logo {
+    margin-right: auto;
+  }
+  
+  .navegator_bar .nav_links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navegator_bar .nav_links li {
+    margin-left: 20px;
+  }
+  
+  .navegator_bar .nav_links li:first-child {
+    margin-left: 0;
+  }
+  
+  .navegator_bar .nav_links li:last-child {
+    margin-right: 0;
+  }
+  
+  .navegator_bar .nav_links a {
+    color: antiquewhite;
+    text-decoration: none;
+  }
+  
 .navegator_bar .logo{
     display: flex;
 }
@@ -79,6 +125,7 @@ grid-area: sidebar;
 .footer{
     background-color: rgb(37, 158, 53);
     grid-area: footer;
+    margin-bottom: 80px;
 
 }
 
