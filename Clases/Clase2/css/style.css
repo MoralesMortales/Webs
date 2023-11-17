@@ -1,0 +1,140 @@
+:root{
+    --colorheader:rgb(114, 114, 42);
+    --favoritecolor:#212;
+}
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(white, black, pink);
+background-size: contain;
+}
+
+.container{
+    position:relative;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 10px;
+    width: 91%;
+    grid-template-rows: 4,auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "header header header""navegator_bar navegator_bar navegator_bar""main main sidebar""main main sidebar""footer footer footer";
+
+}
+
+/* .navegator_bar{
+    background-color: var(--favoritecolor);
+    display: flex;
+    grid-area: navegator_bar;
+    color: antiquewhite;
+    flex-direction: row;
+    height: 40px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+} */
+.navegator_bar {
+    background-color: var(--favoritecolor);
+    display: flex;
+    grid-area: navegator_bar;
+    color: antiquewhite;
+    flex-direction: row;
+    height: 40px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  
+  .navegator_bar nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navegator_bar .logo {
+    margin-right: auto;
+  }
+  
+  .navegator_bar .nav_links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navegator_bar .nav_links li {
+    margin-left: 20px;
+  }
+  
+  .navegator_bar .nav_links li:first-child {
+    margin-left: 0;
+  }
+  
+  .navegator_bar .nav_links li:last-child {
+    margin-right: 0;
+  }
+  
+  .navegator_bar .nav_links a {
+    color: antiquewhite;
+    text-decoration: none;
+  }
+  
+.navegator_bar .logo{
+    display: flex;
+}
+
+.navegator_bar li{
+text-decoration: none;
+}
+
+
+.header{
+
+    animation-name: header_animated;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    background-color: var(--colorheader);
+    grid-area: header;
+    margin-top: 30px;
+}
+
+.container .header,
+.container .footer,
+.container .main_content,
+.container .sidebar{
+    
+    padding: 30px;
+    border-radius: 1em;
+
+}
+
+
+.main_content{
+background-color: violet;
+grid-area: main;
+}
+
+.sidebar{
+    background-color: rgb(187, 48, 48);
+grid-area: sidebar;
+}
+
+.footer{
+    background-color: rgb(37, 158, 53);
+    grid-area: footer;
+    margin-bottom: 80px;
+
+}
+
+@keyframes header_animated {
+    from{
+        padding: 10px;
+    }
+
+    to{padding: 50px;}
+
+}
+

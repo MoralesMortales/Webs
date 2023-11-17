@@ -1,0 +1,110 @@
+:root{
+    --colorheader:rgb(114, 114, 42);
+    --favoritecolor:#212;
+}
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body{
+    background-image: url(../recurses/download\ \(1\).jpg);
+    background-size: cover;
+}
+
+.container{
+    position:relative;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 10px;
+    width: 91%;
+    grid-template-rows: 4,auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "header header header""navegator_bar navegator_bar navegator_bar""main main sidebar""main main sidebar""footer footer footer";
+}
+    .navegator_bar {
+        background-color: var(--favoritecolor);
+        display: flex;
+        grid-area: navegator_bar;
+        color: antiquewhite;
+        height: 100px;
+        
+        flex-direction: row;
+        justify-content: center;
+        grid-template-rows: 1;
+    }
+    
+    nav{
+        width: 91%;
+    }
+    
+    .nav_links {
+        display: flex;
+        list-style-type: none;
+        flex-direction: row;
+        margin: 0;
+    }
+    
+    .nav_links li {
+    }
+    
+    .navegator_bar .logo {
+        background-color: black;
+        padding: 10px;
+        display: flex;
+
+    }
+    
+    .navegator_bar .logo h5 {
+        margin: 0; /* Remove default margin on h5 */
+    }
+    
+.header{
+
+    animation-name: header_animated;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    background-color: var(--colorheader);
+    grid-area: header;
+    margin-top: 30px;
+}
+
+.container .header,
+.container .footer,
+.container .main_content,
+.container .sidebar{
+    
+    padding: 30px;
+    border-radius: 1em;
+
+}
+
+
+.main_content{
+background-color: violet;
+grid-area: main;
+}
+
+.sidebar{
+    background-color: rgb(187, 48, 48);
+grid-area: sidebar;
+}
+
+.footer{
+    background-color: rgb(37, 158, 53);
+    grid-area: footer;
+
+}
+
+@keyframes header_animated {
+    from{
+        padding: 10px;
+    }
+
+    to{padding: 50px;}
+
+}
+

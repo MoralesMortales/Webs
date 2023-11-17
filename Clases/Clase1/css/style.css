@@ -1,0 +1,43 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: orangered;
+}
+
+#title{
+
+    background-color: red;
+    outline: 1px solid black;
+}
+
+.post{
+    outline: 1px solid green;
+}
+
+section{
+
+    background-color: yellow ;
+    outline: 1px solid black;
+}
+
+.sports{
+    font-family: cursive;
+}
+
+.enternaiment{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* body{
+margin: 0;
+background-color: #b44c4c;
+
+}
+
+header{background-color: tomato;
+padding: 2rem;
+text-align: center;}
+ */
