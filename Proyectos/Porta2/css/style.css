@@ -44,6 +44,7 @@ padding: 13px;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1,auto;
     grid-template-areas: "main main side";
+    grid-gap: 10px;
 }
 
 .sidebar{
