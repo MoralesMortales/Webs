@@ -20,22 +20,10 @@ body{
     display: grid;
     grid-gap: 10px;
     width: 91%;
-    grid-template-rows: 4,auto;
+    grid-template-rows: 3,auto;
     grid-template-columns: repeat(3,1fr);
-    grid-template-areas: "header header header""navegator_bar navegator_bar navegator_bar""main main sidebar""main main sidebar""footer footer footer";
+    grid-template-areas: "header header header""main main sidebar""main main sidebar""footer footer footer";
 }
-    .navegator_bar {
-        background-color: var(--favoritecolor);
-        display: flex;
-        grid-area: navegator_bar;
-        color: antiquewhite;
-        height: 100px;
-        
-        flex-direction: row;
-        justify-content: center;
-        grid-template-rows: 1;
-    }
-    
     nav{
         width: 91%;
     }

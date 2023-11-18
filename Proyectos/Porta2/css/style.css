@@ -1,0 +1,91 @@
+:root{
+ --titlepostcolor: #fa30a8;
+ --titlefontsize: 30px;
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+background-color: #e0bd21;
+}
+
+.header {
+
+    background-color: #f92;
+    height: 80px;
+}
+
+.searcher{
+
+background-color: #777;
+margin-bottom: 50px;
+padding: 13px;
+}
+
+.searcher li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 15px;
+}
+
+.searcher li:last-child{
+  margin-right: 40px;
+}
+
+.box_main_and_sidebar{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1,auto;
+    grid-template-areas: "main main side";
+}
+
+.sidebar{
+    grid-area: side;
+    width: 90%;
+}
+
+.mainbox{
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    grid-area: main;
+}
+
+.mainbox .post .title{
+padding: 20px;
+color: #e30;
+gap: 400px;
+}
+
+.mainbox .post .description{
+color: green;
+padding: 1em;
+}
+.mainbox .post{
+    border: 5px solid grey;
+    display: flex;
+    border-radius: 2em;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ccc;
+    width: 90%;
+    height: 35rem;
+    font-size: var(--titlefontsize);
+    margin: 0 auto;
+
+}
+
+.mainbox .image{
+
+width: 450px;
+height: 450px;
+border-radius: 0.3em;
+
+}
