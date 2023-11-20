@@ -10,89 +10,18 @@ box-sizing: border-box;
 }
 
 body{
-    background-image: url(../recurses/download\ \(1\).jpg);
-    background-size: cover;
+    background-color: rgb(121, 57, 57);
 }
 
 .container{
-    position:relative;
-    margin: 0 auto;
-    display: grid;
-    grid-gap: 10px;
-    width: 91%;
-    grid-template-rows: 3,auto;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-areas: "header header header""main main sidebar""main main sidebar""footer footer footer";
-}
-    nav{
-        width: 91%;
-    }
-    
-    .nav_links {
-        display: flex;
-        list-style-type: none;
-        flex-direction: row;
-        margin: 0;
-    }
-    
-    .nav_links li {
-    }
-    
-    .navegator_bar .logo {
-        background-color: black;
-        padding: 10px;
-        display: flex;
-
-    }
-    
-    .navegator_bar .logo h5 {
-        margin: 0; /* Remove default margin on h5 */
-    }
-    
-.header{
-
-    animation-name: header_animated;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    background-color: var(--colorheader);
-    grid-area: header;
-    margin-top: 30px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
 }
 
-.container .header,
-.container .footer,
-.container .main_content,
-.container .sidebar{
-    
-    padding: 30px;
-    border-radius: 1em;
+.container .caja{
 
+    padding: 40px;
+    background-color: white;
+    border: 3px solid black;
 }
-
-
-.main_content{
-background-color: violet;
-grid-area: main;
-}
-
-.sidebar{
-    background-color: rgb(187, 48, 48);
-grid-area: sidebar;
-}
-
-.footer{
-    background-color: rgb(37, 158, 53);
-    grid-area: footer;
-
-}
-
-@keyframes header_animated {
-    from{
-        padding: 10px;
-    }
-
-    to{padding: 50px;}
-
-}
-
