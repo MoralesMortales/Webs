@@ -1,5 +1,5 @@
 :root{
- --titlepostcolor: #fa30a8;
+ --yellowcolor: #e0bd21;
  --titlefontsize: 30px;
 }
 
@@ -19,96 +19,6 @@ background-color: #e0bd21;
     height: 80px;
 }
 
-.searcher{
-
-background-color: #777;
-margin-bottom: 50px;
-padding: 13px;
-}
-
-.searcher li{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    gap: 15px;
-}
-
-.searcher li:last-child{
-  margin-right: 40px;
-}
-
-.box_main_and_sidebar{
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 1,auto;
-    grid-template-areas: "main main side";
-    grid-gap: 10px;
-}
-
-.sidebar{
-    grid-area: side;
-    width: 90%;
-}
-
-.mainbox{
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin: 0 auto;
-    grid-area: main;
-    gap: 20px;
-}
-
-.mainbox .post .title{
-padding: 1em;
-color: #e30;
-gap: 400px;
-}
-
-.mainbox .post .description{
-color: green;
-padding: 1em;
-text-align: center;
-}
-.mainbox .post{
-    border: 5px solid grey;
-    display: flex;
-    border-radius: 2em;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ccc;
-    width: 90%;
-    height: 35rem;
-    font-size: var(--titlefontsize);
-    margin: 0 auto;
-
-}
-
-.mainbox .image{
-
-width: 85%;
-height: 55%;
-border-radius: 0.3em;
-
-}
-
-@media screen and ((max-width: 768px)){
-
-    .box_main_and_sidebar{
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 6,auto;
-    grid-template-areas: "main main main" "main main main" "main main main" "main main main" "main main main" "side side side";
-}
-
-.mainbox .image{
-
-    width: 85%;
-    height: 50%;
-    border-radius: 0.3em;
-    
-    }
-
-    
+.main .main_container{
+ background-color: rgb(131, 52, 131)
 }
