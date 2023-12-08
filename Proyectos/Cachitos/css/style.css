@@ -1,0 +1,27 @@
+:root{
+    --colorheader:rgb(114, 114, 42);
+    --favoritecolor:#212;
+}
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+.header{ 
+    padding: 40px;
+    background: linear-gradient(gray,orange);
+    
+}
+
+.body{
+    margin: 2.59%;
+    width: 90%;
+
+background-image: url(../recurses/Receta\ de\ cachitos\ venezolanos\ -\ Recetas\ ABC.jpg);
+background-repeat: no-repeat;
+background-position: center center;
+background-size: 100%;
+text-align: center;
+}
