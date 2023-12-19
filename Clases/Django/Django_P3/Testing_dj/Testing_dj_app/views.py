@@ -4,4 +4,4 @@ from django.http import HttpResponse
 
 # Create your views here.
 def homePageViewmifuncion(request):
-    return HttpResponse("Hello, World!")
+    return HttpResponse("Come on pal, we're going well")
