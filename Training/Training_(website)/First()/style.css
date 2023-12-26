@@ -65,12 +65,22 @@ padding-right: 17px;
     gap: 1.2em;
     font-size: 0.94em;
  }
-
  #container .section_left .subsetion_left
   .lists > ul > li{
+    display: flex;
+    flex-direction: row;
+    list-style: circle;
+    list-style-type: circle;
+    list-style-image: url(assets/images/icon-list.svg);
+  }
+
+ #container .section_left .subsetion_left
+  .lists > ul > li::marker{
+    content: url(assets/images/icon-list.svg);   
     
-      
 }  
+
+
  #container .section_left 
   .blankspace{
     display: flex;
