@@ -12,3 +12,61 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-size: cover;
     background-position: center;
 }
+
+.naveg{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.naveg > img {
+    width: 5%;
+    height: auto;
+    border-radius: 3em;
+    -webkit-border-radius: 3em;
+    -moz-border-radius: 3em;
+    -ms-border-radius: 3em;
+    -o-border-radius: 3em;
+    cursor: pointer;
+}
+
+.naveg > ul > li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.naveg > ul > li > a:link{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+.naveg > ul > li > a:visited{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.naveg > ul > li > a:before{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.naveg > ul > li ::after{
+
+content: '';
+height: 3px;
+width: 100%;
+position: absolute;
+background: aqua;
+left: 0;
+bottom: -10px;
+}
+
