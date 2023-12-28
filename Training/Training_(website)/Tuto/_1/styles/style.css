@@ -8,7 +8,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 .banner{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(133, 44, 44, 0.397),rgba(2, 1, 1, 0.014)),url(recurses/sun.jpg);
+    background-image: linear-gradient(rgba(133, 44, 44, 0.397),rgba(2, 1, 1, 0.014)),url(../recurses/sun.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -29,7 +29,6 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .naveg > a > img {
-    left: 100px;
     width: 100%;
     height: auto;
     border-radius: 3em;
