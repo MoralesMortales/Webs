@@ -25,3 +25,16 @@ cursor: pointer;
     height: 100px;
     background-color: gold;
 }
+
+table,th,td{
+color: #fff;
+border: 1px solid red;
+border-collapse: collapse;
+padding: 10px;
+text-align: center;
+}
+
+.table_1{
+    display: flex;
+    justify-content: center;
+}
