@@ -38,3 +38,4 @@ class InfoTests(SimpleTestCase):
     def test_template_content(self): # new
         response = self.client.get(reverse("Info"))
         self.assertContains(response, "<h3>Bienvenido a info</h3>")
+        
