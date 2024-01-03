@@ -2,3 +2,21 @@
 
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora suscipit aspernatur ullam quae debitis dolore possimus ratione. Doloremque delectus tempore similique, corporis possimus vero nisi placeat repellendus velit nemo expedita.</p>
 <br><br><br><br><a href="{% url 'home' %}">Bb</a>
+
+<br>
+
+{% for post in posts %}
+
+<a href="{% url 'blog:detail' post.id %}">{{post.title}}</a>
+<br>
+<br>
+<a href="{% url 'blog:post-update' pk=post.pk %}">Update</a>
+<br>
+<br>
+<br>
+<hr>
+{% endfor %}
+
+<br>
+
+<a href="{% url 'blog:create' %}">create</a>

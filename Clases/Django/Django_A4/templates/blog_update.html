@@ -1,0 +1,10 @@
+<h2>hi there</h2>
+<br><br><a href="{% url 'home' %}">Bb</a> 
+
+<form method="POST">
+{% csrf_token %}
+title{{form.title}}
+<br>
+description{{form.description}}
+<button type="submit">Update</button>
+</form>
