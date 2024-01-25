@@ -1,4 +1,17 @@
-<h2>hi there</h2>
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>popo</title>
+</head>
+<body>
+    
+
+    <h2>hi there</h2>
 <br><br><a href="{% url 'home' %}">Bb</a> 
 
 <form method="POST">
@@ -7,4 +20,10 @@ title{{form.title}}
 <br>
 description{{form.description}}
 <button type="submit">Update</button>
+
 </form>
+
+</body>
+</html>
+
+
