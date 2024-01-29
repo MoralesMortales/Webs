@@ -1,0 +1,23 @@
+* {
+    background-color: rgb(124, 7, 7);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.TheHeader, .TheHeader > h1{
+    background-color: #197b19;
+}
+.TheHeader{
+    padding: 5em;
+}
+
+a{
+    padding: 3em;
+    background-color: #f6b50f;
+    border-radius: 0.82em;
+    -webkit-border-radius: 0.82em;
+    -moz-border-radius: 0.82em;
+    -ms-border-radius: 0.82em;
+    -o-border-radius: 0.82em;
+    color: #3b3b3b;
+}
