@@ -4,3 +4,14 @@
     text-align: center;
 }
 
+.TheHeader, .TheHeader > h1{
+    background-color: #197b19;
+}
+.TheHeader{
+    padding: 3em;
+}
+
+a{
+    background-color: #cac3af;
+    color: #3b3b3b;
+}

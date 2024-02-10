@@ -8,16 +8,10 @@
     background-color: #197b19;
 }
 .TheHeader{
-    padding: 5em;
+    padding: 3em;
 }
 
 a{
-    padding: 3em;
-    background-color: #f6b50f;
-    border-radius: 0.82em;
-    -webkit-border-radius: 0.82em;
-    -moz-border-radius: 0.82em;
-    -ms-border-radius: 0.82em;
-    -o-border-radius: 0.82em;
+    background-color: #cac3af;
     color: #3b3b3b;
 }
