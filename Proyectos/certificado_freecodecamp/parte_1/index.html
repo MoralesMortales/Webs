@@ -1,0 +1,173 @@
+<!-- You should have a page title in an h1 element 
+
+Inside the form element, you should have a select dropdown element with an id of dropdown and at least two options to choose from
+Inside the form element, you can select an option from a group of at least two radio buttons that are grouped using the name attribute
+Inside the form element, you can select several fields from a series of checkboxes, each of which must have a value attribute
+Inside the form element, you are presented with a textarea for additional comments
+Inside the form element, you are presented with a button with id of submit to submit all the inputs
+Fulfill the user stories and pass all the tests below to complete this project. Give it your own personal style. Happy Coding! -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Activity from FreeCodeCamp</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Free Code Camp - Carlos Morales Activity</h1>
+        <p id="description">
+          This is a task provided by FreeCodeCamp in order to achive all their
+          requirements for their <strong> Web Design Certification</strong>.
+        </p>
+      </header>
+
+      <main>
+        <form action="send" id="survey-form">
+          <div class="first_form">
+            <label id="name-label">
+              <h2>Name</h2>
+              <input type="text" name="name" id="name" required placeholder="Enter your name" />
+
+            </label>
+            <label id="email-label">
+              <h2>Email</h2>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="Enter your e-mail" />
+            </label>
+            <label id="number-label">
+              <h2>Age</h2>
+              <input
+                type="number"
+                name="Age"
+                id="number"
+                min="7"
+                max="110"
+                required
+                placeholder="Enter your age" />
+            </label>
+          </div>
+
+          <div class="second_form">
+            <h2>How many stars would you give to this website?</h2>
+            <div class="labels_2">
+              <label id="label_group">
+                <div class="label">
+                  <input
+                    type="radio"
+                    name="stars"
+                    value="1_Stars"
+                    class="input_2" /><span> 1 Star </span>
+                </div>
+              </label>
+              <label id="label_group">
+                <div class="label">
+                  <input
+                    type="radio"
+                    name="stars"
+                    value="2_Stars"
+                    class="input_2" /> <span> 2 Stars </span>
+                </div>
+              </label>
+              <label id="label_group">
+                <div class="label">
+                  <input
+                    type="radio"
+                    name="stars"
+                    value="3_Stars"
+                    class="input_2" /> <span>3 Stars</span>
+                </div>
+              </label>
+              <label id="label_group">
+
+                
+                <div class="label">
+                  <input
+                    type="radio"
+                    name="stars"
+                    value="4_Stars"
+                    class="input_2" /><span> 4 Stars</span>
+                
+                  </div>
+              </label>
+              <label id="label_group">
+                <div class="label">
+                  <input
+                    type="radio"
+                    name="stars"
+                    value="5_Stars"
+                    class="input_2" /> <span> 5 Stars </span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="select_why_Are_you_here">
+            <h2>Why are you here?</h2>
+            <label class="select_container">
+              <select name="Reason" id="dropdown">
+                <option value="Business">Business</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Love_for_art">Love for art</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="survey">
+            <h1 class="tittle">How are you feeling after asking this survey</h1>
+            <div class="survey_labels">
+              <label>
+                <input type="checkbox" id="happy_checkbox" value="Happy" />
+                Happier
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  id="angry_checkout"
+                  value="Angry" />Angrier
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  id="motivated_checkbox"
+                  value="Motivated" />
+                Motivated
+              </label>
+              <label>
+                <input type="checkbox" id="sad_checkbox" value="Sad" />Sadder
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  id="exhausted_checkbox"
+                  value="Exhausted" />Exhausted
+              </label>
+            </div>
+          </div>
+          <div class="opinion_textarea_div">
+            
+              <h2>Give us your own answer</h2>
+
+              <textarea
+                name="opinion_textarea"
+                id="opinion_textarea"
+                cols="5"
+                rows="5"></textarea>
+            
+          </div>
+       <div class="button">
+          <button form="survey-form" id="submit" type="submit">Send</button>
+        </div>   
+        </form>
+      
+      </main>
+    </div>
+  </body>
+</html>

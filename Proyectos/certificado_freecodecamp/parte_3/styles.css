@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{display: flex;
+flex-direction: row-reverse;
+width: 100%;
+}
+
+#main-doc{
+    padding: 1rem;
+    background-color: #b5e6b5;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#navbar{
+    padding: 1rem;
+    background-color: #cc8f3f;
+    width: 320px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#a_container{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 1.03rem;
+    margin-top: 2em;
+}
+
+#a_container a{
+    background-color: antiquewhite;
+    padding: 1em;
+    color: black;
+    text-decoration: none;
+    transition: ease-in  0.12s;
+    -webkit-transition: ease-in  0.12s;
+    -moz-transition: ease-in  0.12s;
+    -ms-transition: ease-in  0.12s;
+    -o-transition: ease-in  0.12s;
+}
+#a_container a:hover{
+    background-color: burlywood;
+    transition: ease-in  0.12s;
+    -webkit-transition: ease-in  0.12s;
+    -moz-transition: ease-in  0.12s;
+    -ms-transition: ease-in  0.12s;
+    -o-transition: ease-in  0.12s;
+    border-radius: 9px 0px 9px 2px;
+    -webkit-border-radius: 9px 0px 9px 2px;
+    -moz-border-radius: 9px 0px 9px 2px;
+    -ms-border-radius: 9px 0px 9px 2px;
+    -o-border-radius: 9px 0px 9px 2px;
+}
+
+.main-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
+    padding: 1rem;
+    text-align: justify;
+    background-color: aliceblue;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+#navbar #title{
+    text-wrap: nowrap;
+    text-align: center;
+    margin-top: 1em;
+}
+
+ul{
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+@media screen and (max-width: 943px){
+ 
+.Thenavbar{
+    display: none;
+}    
+}

@@ -1,0 +1,128 @@
+<!-- Your product landing page should have a header element with a corresponding id="header"
+You can see an image within the header element with a corresponding id="header-img" (A logo would make a good image here)
+Within the #header element, you can see a nav element with a corresponding id="nav-bar"
+You can see at least three clickable elements inside the nav element, each with the class nav-link
+
+When you click a .nav-link button in the nav element, you are taken to the corresponding section of the landing page
+
+You can watch an embedded product video with id="video"
+Your landing page has a form element with a corresponding id="form"
+Within the form, there is an input field with id="email" where you can enter an email address
+The #email input field should have placeholder text to let users know what the field is for
+The #email input field uses HTML5 validation to confirm that the entered text is an email address
+Within the form, there is a submit input with a corresponding id="submit"
+When you click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit)
+The navbar should always be at the top of the viewport
+Your product landing page should have at least one media query
+Your product landing page should utilize CSS flexbox at least once 
+
+https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-product-landing-page-project/build-a-product-landing-page-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="theheader">
+
+            <header id="header">
+                <div id="header-container">
+                    <img src="https://www.clipartmax.com/png/middle/326-3261907_playtika-chita-gaming-logo-no-copyright.png"
+                        alt="Logo" id="header-img">
+                    <nav class="nav-bar">
+                        <ul>
+                            <a href="">
+                                <li class="nav-link">Who we are</li>
+                            </a>
+                            <a href="">
+                                <li class="nav-link">Merch</li>
+                            </a>
+                            <a href="">
+                                <li class="nav-link">Customer Service</li>
+                        </ul></a>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+        <main id="main">
+            <h1 id="the_title">C.A FastCareEasy</h1>
+            <div class="video-container">
+                
+                <iframe src="https://www.youtube.com/embed/z63KyqrIpok" title="Studying alone at home late at night." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
+            </div>
+<div id="form-box">
+
+    <h2 class="title">Join us in our Amazing Comunity</h2>
+            <form id="form"> <!-- action="https://www.freecodecamp.com/email-submit"> -->
+                <input type="email" name="email" id="email" placeholder="">
+                <input type="submit" id="submit">
+            </form>
+        </div>
+    <div class="theposts">
+
+        <div class="post">
+            <div class="left-side">
+                <h3 class="tile">Style Da-vinci Poster </h3>
+                <img src="https://i.pinimg.com/564x/df/3e/11/df3e1116edc764e26901c879afa128c4.jpg" alt="car-image">
+            </div>
+            <div class="right-side">
+                <h3>
+                    Price
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nesciunt error cumque, ullam illum autem veritatis architecto, dolor earum minima saepe ut. Pariatur excepturi, blanditiis modi impedit repellendus laboriosam sapiente.
+                </p>
+            </div>
+        </div>   
+        
+        <div class="post">
+            <div class="left-side">
+                <h3 class="tile">Style Damiano Poster </h3>
+                <img src="https://i.pinimg.com/564x/df/3e/11/df3e1116edc764e26901c879afa128c4.jpg" alt="car-image">
+            </div>
+            <div class="right-side">
+                <h3>
+                    Price
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nesciunt error cumque, ullam illum autem veritatis architecto, dolor earum minima saepe ut. Pariatur excepturi, blanditiis modi impedit repellendus laboriosam sapiente.
+                </p>
+            </div>
+        </div>  
+        
+        <div class="post">
+            <div class="left-side">
+                <h3 class="tile">Style Bach Poster </h3>
+                <img src="https://i.pinimg.com/564x/df/3e/11/df3e1116edc764e26901c879afa128c4.jpg" alt="car-image">
+            </div>
+            <div class="right-side">
+                <h3>
+                    Price
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nesciunt error cumque, ullam illum autem veritatis architecto, dolor earum minima saepe ut. Pariatur excepturi, blanditiis modi impedit repellendus laboriosam sapiente.
+                </p>
+            </div>
+        </div>  
+    </div> 
+        
+    </main>
+</div>
+<div class="the_footer">
+        <footer id="footer">
+            <p>Rights Reserved</p>
+            <p>Project Done by Carlos Morales</p>
+        </footer>
+    </div>
+</body>
+
+</html>

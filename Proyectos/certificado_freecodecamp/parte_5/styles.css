@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: wheat;
+}
+
+#container {
+    
+}
+
+#container .the-header {
+    width: 100%;
+}
+
+#container .the-header header {
+    width: 100%;
+}
+
+#header_content {
+    display: flex;
+    background-color: tomato;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    justify-content: space-between;
+
+}
+
+#header_content .left-space {
+    padding-left: 4rem;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#header_content .right-space {
+    padding-right: 3rem;
+}
+
+#nav-bar_section {
+    width: 100%;
+    height: 2.7rem;
+    background-color: aqua;
+    position: fixed;
+    top: 0;
+}
+
+#nav-bar_section #nav-bar_container {
+    height: 100%;
+    width: 100%;
+    
+}
+
+#nav-bar_section #nav-bar_container #navbar {
+    height: 100%;
+    width: 100%;
+
+}
+
+#nav-bar_container #navbar ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#nav-bar_container #navbar ul li {
+    list-style: none;
+    background-color: bisque;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#nav-bar_container #navbar ul a:visited,
+#nav-bar_container #navbar ul a:link,
+#nav-bar_container #navbar ul a:before {
+    text-decoration: none;
+}
+
+#main{
+    width: 100%
+}
+
+#projects{
+    width: 100%;
+}
+
+.project-field{
+    background-color: rgb(238, 94, 50);
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 4rem;
+    height: 18rem;
+    padding: 1rem;
+}
+
+.project-field .left-space{
+width: 50%;
+
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+
+.project-field img{
+display: inline-block;
+height: 50%;
+width: auto;
+}
+
+.project-field .right-space{
+background-color: aqua;
+
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-me{
+    margin: 2rem;
+    padding: 0.5rem;
+    background-color: rgb(187, 154, 131);
+
+}
+
+@media screen and(max-width:763px) {
+    body{background-color: black;
+    }}
